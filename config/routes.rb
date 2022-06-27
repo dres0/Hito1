@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :admins
+  get 'home/index'
   resources :categories
   resources :products
   root 'home#index'
